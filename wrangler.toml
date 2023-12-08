@@ -1,0 +1,14 @@
+name = "my-worker"
+type = "webpack"
+main = "src/country.js"
+account_id = "7b1d051ca25bffda36f05f5906ac0a87"
+workers_dev = true
+compatibility_date = "2023-12-06"
+[[r2_buckets]]
+binding = "country_buckets"
+bucket_name = "country-flags"
+
+[env.production]
+zone_id = "643dc91b1c7a495bf8378e27dad3e3a9"
+route = "https://tunnel.sabaratnam.id.au/secure*"
+workers_dev = false
